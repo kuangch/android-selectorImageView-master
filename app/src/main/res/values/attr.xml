@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SelectImageView">
+        <attr name="select_color" format="color|reference"></attr>
+        <attr name="origin_color" format="color|reference"></attr>
+        <attr name="custom_img_src" format="reference"></attr>
+        <attr name="change_method" >
+            <enum name="color2gray" value="0" />
+            <enum name="color2color" value="1" />
+        </attr>
+        <attr name="view_type" >
+            <enum name="checkbox" value="0" />
+            <enum name="tableButton" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

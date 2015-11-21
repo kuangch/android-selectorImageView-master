@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <Button
+           android:paddingLeft="100px"
+           android:paddingRight="100px"
+           android:id="@+id/btn_cb"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="做为checkbox使用"/>
+       <Button
+           android:paddingLeft="100px"
+           android:paddingRight="100px"
+           android:id="@+id/btn_tb"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="做为table button使用"/>
+       <Button
+           android:paddingLeft="100px"
+           android:paddingRight="100px"
+           android:id="@+id/btn_img"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="做为处理图片使用"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

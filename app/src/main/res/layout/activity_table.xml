@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffececec"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.kuangch.selectorImageView.SelectImageView
+                android:id="@+id/iv_home"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:clickable="true"
+                app:change_method="color2gray"
+                app:custom_img_src="@drawable/icon_chrome"
+                app:view_type="tableButton" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.kuangch.selectorImageView.SelectImageView
+                android:id="@+id/iv_home2"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:clickable="true"
+                app:change_method="color2gray"
+                app:custom_img_src="@drawable/icon_music"
+                app:view_type="tableButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.kuangch.selectorImageView.SelectImageView
+                android:id="@+id/iv_home3"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:clickable="true"
+                app:change_method="color2gray"
+                app:custom_img_src="@drawable/icon_people"
+                app:view_type="tableButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/table"
+        android:background="#ffaaaaaa"></View>
+
+</RelativeLayout>
