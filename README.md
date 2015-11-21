@@ -12,7 +12,10 @@
                 app:origin_color="#ffff00ff"
                 app:select_color="#ff0000ff" />
 ```
-建议使用custom_img_src设置图片资源，本空间也兼容src设置图片资源，但是前者性能跟好  
+`change_method:`图片切换的变色方式。图片有两种方式变色(`color2color`,`color2grey`)，一种是通过drawableCompat着色，这种方式需要图片资源时标准的png图片不然显示异常。另一种通过算法将彩色图片转化成灰度图，原图和灰度图切换实现选中和非选中效果。  
+
+建议使用`custom_img_src`设置图片资源，本控件也兼容imageview自身的`src`设置图片资源，但是前者性能更好  
+
 选择状态改变监听方法
 ```java
 checkbox1.setOnStateChangeListener(new SelectImageView.IonStateChangeListener() {
@@ -33,5 +36,7 @@ checkbox1.setOnStateChangeListener(new SelectImageView.IonStateChangeListener() 
                 app:custom_img_src="@drawable/icon_people"
                 app:view_type="tableButton" />
 ```
+`view_type:`控件的使用类型有两种方式（`tableButton`,`checkbox`）默认为`checkbox` 类似系统的checkbox控件。选择`tableButton`类型现在暂时没
+有状态变化监听，后续会加上
 #效果展示
 ![image](https://github.com/kuangch/SelectorImageView-master/blob/master/showpiece.GIF)
