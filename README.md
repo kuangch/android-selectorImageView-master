@@ -12,7 +12,7 @@
                 app:origin_color="#ffff00ff"
                 app:select_color="#ff0000ff" />
 ```
-建议使用custom_img_src设置图片资源，本空间也兼容src设置图片资源，但是前者性能跟好
+建议使用custom_img_src设置图片资源，本空间也兼容src设置图片资源，但是前者性能跟好  
 选择状态改变监听方法
 ```java
 checkbox1.setOnStateChangeListener(new SelectImageView.IonStateChangeListener() {
@@ -34,4 +34,4 @@ checkbox1.setOnStateChangeListener(new SelectImageView.IonStateChangeListener() 
                 app:view_type="tableButton" />
 ```
 #效果展示
-![image](https://github.com/kuangch/SelectorImageView-master/showpiece.GIF)
+![image](https://github.com/kuangch/SelectorImageView-master/blob/master/showpiece.GIF)
