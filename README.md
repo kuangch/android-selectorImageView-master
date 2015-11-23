@@ -13,7 +13,7 @@
                 app:origin_color="#ffff00ff"
                 app:select_color="#ff0000ff" />
 ```
-`change_method:`图片切换的变色方式。图片有两种方式变色(`color2color`,`color2grey`)，一种是通过drawableCompat着色，这种方式需要图片资源时标准的png图片不然显示异常。另一种通过算法将彩色图片转化成灰度图，原图和灰度图切换实现选中和非选中效果。  
+`change_method:`图片切换的变色方式。图片有两种方式变色(`color2color`,`color2grey`)，一种是通过drawableCompat着色，这种方式需要图片资源是标准的png图片，并且图片只有一种颜色，不然显示异常。另一种通过算法将彩色图片转化成灰度图，原图和灰度图切换实现选中和非选中效果。  
 
 建议使用`custom_img_src`设置图片资源，本控件也兼容imageview自身的`src`设置图片资源，但是前者性能更好  
 
